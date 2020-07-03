@@ -1,0 +1,24 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		showHeader="false"
+		contentWidth="320px"
+		contentHeight="200px"
+		placement="Right">
+		<NavContainer
+			id="navCon">
+			<Page
+				title="Select Filter Option">
+				<List
+					id="list"
+					items="{/SelectionCriteria}" >
+					<StandardListItem
+						title="{filter}"
+						type="Active"
+						press="onFilter" />
+				</List>
+			</Page>
+		</NavContainer>
+	</Popover>
+</core:FragmentDefinition>
